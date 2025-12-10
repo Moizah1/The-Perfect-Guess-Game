@@ -34,4 +34,5 @@ A simple Python command-line game where the computer generates a random number, 
 
 ## ▶️ How to Run
 ```bash
-python perfect_guess.py
+python main.py
+python gui.py
