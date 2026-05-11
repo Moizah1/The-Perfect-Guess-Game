@@ -1,38 +1,93 @@
-# Perfect Guess Game 🧠🎯
+# 🎯 The Perfect Guess
 
-A simple Python command-line game where the computer generates a random number, and the player tries to guess it. The game provides hints to help the player reach the correct number.
-
----
-
-## 🎮 How to Play
-1. Run the Python script.
-2. The computer will generate a random number.
-3. Enter your guess:
-   - If your guess is too high → the program will say: "lower number please".
-   - If your guess is too low → the program will say: "higher number please".
-4. Keep guessing until you find the correct number.
-5. The program will display how many attempts you used to guess the number.
+A number guessing game built with Python, available in both a **command-line** and a **graphical (GUI)** version. The program generates a random number between 1 and 100, and the player must guess it — with hints given after each attempt.
 
 ---
 
-## 🛠️ Features
-- Generates a random number using Python's `random` module.
-- Interactive command-line gameplay.
-- Provides hints for the player to guess efficiently.
-- Counts and displays the total number of attempts.
+## 📁 Project Structure
+
+```
+the-perfect-guess/
+├── main.py       # Command-line version
+├── gui.py        # GUI version using Tkinter
+└── README.md
+```
 
 ---
 
-## 📚 Concepts Used
-- Python variables
-- User input handling
-- Loops (`while`)
-- Conditional statements (`if-elif-else`)
-- Random number generation (`random.randint()`)
+## 🚀 Features
+
+- Random number generation between 1 and 100
+- "Higher" / "Lower" hints after each guess
+- Tracks the number of attempts
+- GUI version includes a reset button to start a new game
+- Input validation to handle non-numeric entries (GUI)
 
 ---
 
-## ▶️ How to Run
+## 🖥️ How to Run
+
+### Command-Line Version
+
 ```bash
 python main.py
+```
+
+**Example interaction:**
+
+```
+Guess the number: 50
+Higher number please
+Guess the number: 75
+Lower number please
+Guess the number: 63
+You have guessed the number 63 correctly in 3 attempts
+```
+
+---
+
+### GUI Version
+
+```bash
 python gui.py
+```
+
+The GUI window will open. Type your guess in the input field and click **Submit Guess**. Use the **Reset Game** button to start over at any time.
+
+> **Requirement:** Tkinter is included with standard Python installations. No additional packages needed.
+
+---
+
+## 🛠️ Requirements
+
+- Python 3.x
+- Tkinter *(included in standard Python — no extra install needed)*
+
+---
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone (repository)
+
+# Navigate into the project folder
+cd the-perfect-guess
+
+# Run either version
+python main.py      # CLI
+python gui.py       # GUI
+```
+
+---
+
+## 🧠 How It Works
+
+1. A random integer between **1 and 100** is generated at the start.
+2. The player enters a guess.
+3. The program responds with:
+   - **"Higher number please"** — if the guess is too low
+   - **"Lower number please"** — if the guess is too high
+   - **Congratulations message** — when the correct number is guessed, along with the attempt count.
+4. In the GUI version, the game resets automatically after a correct guess.
+
